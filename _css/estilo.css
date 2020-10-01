@@ -12,9 +12,17 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 h1{
+    margin-top: 5px;
+    font-size: 30px;
+    text-indent: 10px;
+}
+h2{
     background-color: steelblue;
+    border-radius: 150px;
+    text-indent: 10px;
     padding: 10px;
     color: white;
+    font-size: 20px;
 }
 p{
     text-align: justify;
@@ -23,9 +31,9 @@ p{
 /*Image with subtitle---------------------------------------*/
 figure.image_with_subtitle{
     position: relative;
-    border: 10px steelblue;
-    border-style: none none none solid;
+    border-left: steelblue solid 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    margin: 30px 0px 30px 0px;
 }
 figure.image_with_subtitle img{
     width: 100%;
@@ -58,7 +66,7 @@ nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: 9px;
+    top: 0px;
     right: 152px;
 }
 nav#menu li{
@@ -120,10 +128,13 @@ section#section-body{
     background-color: white;
 }
 aside#aside-body{
+    background-color: rgb(230, 244, 255);
     display: block;
-    width: 368px;
+    width: 330px;
     float: right;
     padding: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 footer#footer-body{
     clear: both;
