@@ -7,14 +7,15 @@
 }
 
 body{
-    background-color: #dddddd;
+    background-color: rgb(99, 159, 207);
     color: rgb(0, 0, 0);
-    font-family: 'Source Sans Pro', sans-serif;}
+    font-family: 'Source Sans Pro', sans-serif;
+}
 p{
     text-align: justify;
     text-indent: 30px;
 }
-/*Imagem com legenda*/
+/*Image with subtitle---------------------------------------*/
 figure.image_with_subtitle{
     position: relative;
     border: 10px steelblue;
@@ -41,7 +42,7 @@ figure.image_with_subtitle figcaption{
 figure.image_with_subtitle:hover figcaption{
     opacity: 1;
 }
-/*Navegation*/
+/*Navegation-----------------------------------------------*/
 nav#menu{
     display: block;
 }
@@ -49,19 +50,19 @@ nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: -20px;
-    right: 0px;
+    top: 9px;
+    right: 152px;
 }
 nav#menu li{
     display: inline-block;
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(46, 108, 158);
     padding: 10px;
     margin: 2px;
     font-weight: 400;
     transition: background-color .3s;
 }
 nav#menu li:hover{
-    background-color: gray;
+    background-color: rgb(25, 79, 124);
 }
 nav#menu h1{
     display: none;
@@ -70,34 +71,65 @@ nav#menu a{
     color: white;
     text-decoration: none;
 }
-/*Division*/
+/*Division------------------------------------------------*/
 div#interface{
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
-    width: 800px;
-    padding: 10px;
+    background-color: rgb(204, 232, 255);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .7);
+    width: 1050px;
     margin: 20px auto 10px auto;
 }
-/*Header*/
+/*Header, Section, Aside, Footer --------------------------*/
 header#header{
-    border-bottom: steelblue solid 3px;
     height: 150px;
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 97px;
+    background-color: steelblue;
+    padding: 0px 0px 20px 0px;
 }
 header#header img#icon{
     position: absolute;
-    top: 60px;
-    right: 40px;
+    top: 70px;
+    right: 60px;
 }
 header#header h1{
     font-size: 30pt;
-    color: rgb(100, 100, 100);
-    padding: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    color: white;
+    padding: 0px 0px 0px 10px;
     margin-bottom: 0px;
 }
 header#header h2{
-    font-size: 20pts;
-    color: gray;
-    padding: 5px;
+    font-size: 15pt;
+    font-weight: 400;
+    color: white;
+    padding: 0px 0px 0px 10px;
     margin-top: 0px;
+}
+section#section-body{
+    display: block;
+    width: 600px;
+    float: left;
+    padding: 20px;
+    background-color: white;
+}
+aside#aside-body{
+    display: block;
+    width: 368px;
+    float: right;
+    padding: 20px;
+}
+footer#footer-body{
+    clear: both;
+    display: block;
+    background-color: steelblue;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+footer#footer-body p{
+    text-align: center;
+    color: white;
+}
+footer#footer-body a{
+    text-decoration: none;
+    color:  white;
+    font-weight: bold;
 }
