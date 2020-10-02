@@ -29,17 +29,17 @@ p{
     text-indent: 30px;
 }
 /*Image with subtitle---------------------------------------*/
-figure.image_with_subtitle{
+figure.image-with-subtitle{
     position: relative;
     border-left: steelblue solid 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
     margin: 30px 0px 30px 0px;
 }
-figure.image_with_subtitle img{
+figure.image-with-subtitle img{
     width: 100%;
     height: 100%;
 }
-figure.image_with_subtitle figcaption{
+figure.image-with-subtitle figcaption{
     opacity: 0;
     transition: opacity 0.3s;
     position: absolute;
@@ -52,10 +52,10 @@ figure.image_with_subtitle figcaption{
     padding: 10px 10px 10px 20px;
     box-sizing: border-box;
 }
-figure.image_with_subtitle:hover figcaption{
+figure.image-with-subtitle:hover figcaption{
     opacity: 1;
 }
-figure.image_with_subtitle p{
+figure.image-with-subtitle p{
     text-indent: 0px;
 }
 /*Navegation-----------------------------------------------*/
