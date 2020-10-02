@@ -120,6 +120,11 @@ header#header h2{
     padding: 0px 0px 0px 10px;
     margin-top: 0px;
 }
+section{
+    display: block;
+    padding: 20px;
+    background-color: white;
+}
 section#section-body{
     display: block;
     width: 600px;

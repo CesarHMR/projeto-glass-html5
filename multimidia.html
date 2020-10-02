@@ -1,25 +1,46 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Glass Multimídia</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+</head>
+<script src="_javascript/funcoes.js"></script>
+<body>
+    <div id="interface">
 
-[AQUI ENTRA UMA FOTO]
+        <header id="header">
+            <hgroup>
+            <h1>Google Glass</h1>
+            <h2>revolução do Google está chegando</h2>
+            </hgroup>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+            <img id="icon" src="_imagens/multimidia.png">
+            
+            <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="ChangeIconImage('home')"onmouseout="ChangeIconImage('multimidia')"><a href="index.html">Home</a></li>
+                <li onmouseover="ChangeIconImage('especificacoes')"onmouseout="ChangeIconImage('multimidia')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="ChangeIconImage('fotos')"onmouseout="ChangeIconImage('multimidia')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="ChangeIconImage('multimidia')"onmouseout="ChangeIconImage('multimidia')"><a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="ChangeIconImage('contato')"onmouseout="ChangeIconImage('multimidia')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+            </nav>
+        </header>
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        <section>
+            Áudio e Vídeo
 
+            [AQUI ENTRA UM VÍDEO]
+            [AQUI ENTRA UM ÁUDIO]
+        </section>
 
-Áudio e Vídeo
-
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+        <footer id="footer-body">
+            <p>2013 - by Gustavo Guanabara</p>
+            <p><a href="https://www.facebook.com/cesarhenrique.martinsdarosa" target="_blank">Facebook</a> | <a href="https://twitter.com/Veludito" target="_blank">Twitter</a></p>
+        </footer>
+    </div>
+</body>
+</html>
