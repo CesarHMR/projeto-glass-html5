@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+iframe#framespec{
+    width: 450px;
+    height: 375px;
+    border: none;
+    overflow: hidden;
+    border-radius: 30px;
+    display: block;
+    float: right;
+}
+iframe#framespec::-webkit-scrollbar{
+    display: none;
+}
