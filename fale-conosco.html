@@ -41,15 +41,13 @@
             <form method="post" action="cesar_20002911@hotmail.com">
                 <fieldset>
                     <legend>Identificação do Usuário</legend>
-                        <p>Nome: <input type="text" name="tb" id="tbName" size="100" maxlength="120" placeholder="Nome Completo"></p>
-                        <p>Senha: <input type="password" name="pb" id="pbPasswprd" size="16" maxlength="16" placeholder="8 dígitos"></p>
-                        <p>E-mail: <input type="email" name="eb" id="ebEmail" size="30" maxlength="30" placeholder="E-mail"></p>
-                        <fieldset>
-                            <legend>Sexo:</legend>
-                                <input type="radio" name="rb" id="rbM" checked><label for="rbM">Masculino</label><br>
-                                <input type="radio" name="rb" id="rbF"><label for="rbF">Feminino</label><br>
-                                <input type="radio" name="rb" id="rbO"><label for="rbO">Outro</label>
-                        </fieldset>
+                        <p>Nome*: <input type="text" name="tb" id="tbName" size="100" maxlength="120" placeholder="Nome Completo" required></p>
+                        <p>Senha*: <input type="password" name="pb" id="pbPasswprd" size="16" maxlength="16" placeholder="8 dígitos" required></p>
+                        <p>E-mail*: <input type="email" name="eb" id="ebEmail" size="30" maxlength="30" placeholder="E-mail" required></p>
+                            <p>Sexo*:
+                                <input type="radio" name="rb" id="rbM" checked><label for="rbM">Masculino</label>
+                                <input type="radio" name="rb" id="rbF"><label for="rbF">Feminino</label>
+                                <input type="radio" name="rb" id="rbO"><label for="rbO">Outro</label></p>
                         <p>Data de Nascimento: <input type="date" name="db" id="dbBirthday"></p>
                 </fieldset>
                 
@@ -82,7 +80,8 @@
                 <fieldset>
                     <legend>Mensagem do Usuário</legend>
                         <p>Grau de Urgência: Min<input type="range" min="1" max="4" step="1">Max</p>
-                        <p>Mensagem: <br/><textarea name="" id="" cols="100" rows="10"></textarea></p>
+                        <p>Mensagem:</p>
+                        <textarea name="" id="" cols="100" rows="10"></textarea>
                 </fieldset>
     
                 <fieldset>
@@ -96,7 +95,7 @@
             </form>
         </section>
         <footer id="footer-body">
-            <p>2013 - by Gustavo Guanabara</p>
+            <p>2020 - por Cesar Henrique</p>
             <p><a href="https://www.facebook.com/cesarhenrique.martinsdarosa" target="_blank">Facebook</a> | <a href="https://twitter.com/Veludito" target="_blank">Twitter</a></p>
         </footer>
     </div>
