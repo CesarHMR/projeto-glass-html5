@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Glass Fale Conosco</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
+    <script>
+        function CalculateTotalPrice(){
+            var qtd = parseInt(document.getElementById('total').value)
+            var totalPrice = 1500 * qtd;
+            document.getElementById('result').value = totalPrice
+        }
+    </script>
 </head>
 <script src="_javascript/funcoes.js"></script>
 <body>
@@ -30,33 +38,62 @@
             </nav>
         </header>
         <section>
-            Identificação do Usuário
-                Nome:
-                Senha:
-                E-mail:
-                Sexo:
-                    - Masculino
-                    - Feminino
-                Data de Nascimento:
-
-            Endereço do Usuário
-                Logradouro:
-                Número:
-                Estado:
-                Cidade:
-
-            Mensagem do Usuário
-                Grau de Urgência:
-                Mensagem:
-
-            Quero um Google Glass
-                Gostaria de adquirir um Google Glass quando disponível
-                Cor:
-                Quantidade:
-                Preço Total: R$
-
-
-            [BOTÃO ENVIAR]
+            <form method="post" action="cesar_20002911@hotmail.com">
+                <fieldset>
+                    <legend>Identificação do Usuário</legend>
+                        <p>Nome: <input type="text" name="tb" id="tbName" size="100" maxlength="120" placeholder="Nome Completo"></p>
+                        <p>Senha: <input type="password" name="pb" id="pbPasswprd" size="16" maxlength="16" placeholder="8 dígitos"></p>
+                        <p>E-mail: <input type="email" name="eb" id="ebEmail" size="30" maxlength="30" placeholder="E-mail"></p>
+                        <fieldset>
+                            <legend>Sexo:</legend>
+                                <input type="radio" name="rb" id="rbM" checked><label for="rbM">Masculino</label><br>
+                                <input type="radio" name="rb" id="rbF"><label for="rbF">Feminino</label><br>
+                                <input type="radio" name="rb" id="rbO"><label for="rbO">Outro</label>
+                        </fieldset>
+                        <p>Data de Nascimento: <input type="date" name="db" id="dbBirthday"></p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Endereço do Usuário</legend>
+                        <p>Logradouro: <input type="text" name="sb" id="sbStreet" placeholder="Cidade, Rua, Avenida..."></p>
+                        <p>Número: <input type="number" name="nb" id="nbNumber" min="0" max="99999"></p>
+                        <p>Estado:
+                        <select name="sb" id="sbState">
+                            <option value="None" selected>Selecione</option>
+                            <optgroup label="Sudeste">
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            </optgroup>
+                            <optgroup label="Sul">
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                            </optgroup>
+                        </select></p>
+                        <p>Cidade: <input type="text" name="tb" id="tbCity" list="citys"></p>
+                        <datalist id="citys">
+                            <option value="São José"></option>
+                            <option value="Florianópolis"></option>
+                            <option value="JoinVille"></option>
+                            <option value="Criciúma"></option>
+                            <option value="Tubarão"></option>
+                        </datalist>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Mensagem do Usuário</legend>
+                        <p>Grau de Urgência: Min<input type="range" min="1" max="4" step="1">Max</p>
+                        <p>Mensagem: <br/><textarea name="" id="" cols="100" rows="10"></textarea></p>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Quero um Google Glass</legend>
+                        <p>Gostaria de adquirir um Google Glass quando disponível <input type="checkbox"></p>
+                        <p>Cor: <input type="color" value="#000000"></p>
+                        <p>Quantidade: <input type="number" id="total" min="0" max="5" onchange="CalculateTotalPrice()"></p>
+                        <p>Preço Total: R$ <input type="text" id="result" readonly placeholder="Total a pagar"></p>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
         <footer id="footer-body">
             <p>2013 - by Gustavo Guanabara</p>
